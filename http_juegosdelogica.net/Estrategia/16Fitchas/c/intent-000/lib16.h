@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define sizeMutacions 10
+
+struct cosElemental
+{
+	unsigned short int element;
+	struct cosElemental * next;
+};
+
+unsigned short int *listMutation;
+unsigned short int *listAll;
+struct cosElemental *listCosElemental;
+
+
+/* Llista que generara per les mutacions */
+void generateListMutations ( short int *); /* dc set  9 15:54:13 CEST 2015 Funciona */
+
+struct cosElemental * newCosElemental (short int, short int); /* canvi inportant en aquesta funcio */
+
+
+void init16	(); /* dc set  9 15:54:13 CEST 2015 Funciona */
+void end16	(); /* dc set  9 15:54:13 CEST 2015 Funciona */
+
+void output	( short int); /* dc set  9 15:54:13 CEST 2015 Funciona */
+unsigned short int input (void);
