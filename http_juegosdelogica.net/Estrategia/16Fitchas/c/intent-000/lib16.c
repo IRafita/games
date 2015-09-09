@@ -66,6 +66,21 @@ short int n, i; /* n es el lloc, i i el valor que se vol entrar */
 	return l;
 }
 
+void ShowSolution ( n, cont )
+short int n;
+int cont;
+{
+	int t;
+	while (cont--)
+	{
+		t = listAll[n];
+		printf ("Element %d\n", cont);
+		output (n);
+		n = t;
+	}
+	printf ("Final ?\n");
+	output (n);
+}
 
 /******************** Al final de tot ********************/
 void init16	()

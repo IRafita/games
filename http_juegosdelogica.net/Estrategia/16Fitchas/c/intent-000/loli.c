@@ -1,5 +1,4 @@
 #include "lib16.h"
-#include "debug.h"
 
 
 /* Un gran canvi em de fer, s'ha d'entendre que necessitem una llista molt gran amb els objectes corresponents,
@@ -7,8 +6,8 @@ sino hi ha risc que ocupi el mateix espai de memoria, cosa que m'esta passant ac
 int main (void)
 {
 	init16 ();
-	int i, imut, contador = 0;
-	unsigned short int shortInput = 0x421, shortActiu, shortTmp;
+	int i, imut, contador = 0, profunditat = 0;
+	unsigned short int shortInput = 0x111e, shortActiu, shortTmp;
 
 /*	for (i = 0; i < sizeMutacions; i++) Comprovant el seu bon funcionament del init16
 	{
@@ -23,6 +22,7 @@ int main (void)
 
 	for (i = 0; i < 10; i++)
 	{
+	profunditat++;
 		if (!StructPasiuPrimer) break; /* petit sistema de seguretat */
 
 		StructActiu = StructPasiuPrimer;/* Me pregunto fins a quin punt es legal fer aixo */
@@ -54,13 +54,13 @@ int main (void)
 					}
 				} else
 				{
+					ShowSolution (shortTmp, profunditat);
 					end16 ();
 					printf ("Solucio trobada\n");
-					exit (3);
+					exit (0);
 				}
 			}
 			StructActiu = StructActiu->next;
-			printf ("Em llegit %d\n", contador);
 		} while (StructActiu);
 		printf ("Em llegit %d\n", contador);
 	}
