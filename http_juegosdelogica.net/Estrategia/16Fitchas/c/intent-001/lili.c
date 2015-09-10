@@ -1,4 +1,4 @@
-
+#include "lib16.h"
 /*
 Llegenda
 	SA	Struct active
@@ -18,15 +18,18 @@ Llegenda
 
 int main (void)
 {
+	init16 ();
 	unsigned int level = 0, iM, contador = 0;
-	struct llista * SA, * SPFirst, * SPEnd;
-	unsigned short int shA
+	struct lista * SA, * SPFirst, * SPEnd, *ST;
+	unsigned short int shA, shT;
+
+	SPFirst = newS ( 16282, contador );
 
 
 	do
 	{
 		SA = SPFirst;
-/* Normalment aquesta sobraria per la versio del futur */
+/* Normalment aquesta sobraria per la versio del futur SPFirst = NULL; */
 		SPFirst = NULL;
 		level++;
 
@@ -60,7 +63,7 @@ int main (void)
 					}
 				else
 				{
-					printf ("Finish game\n");
+					printf ("Finish game al nivell %d\n i trobats %d\n", level, contador);
 					exit (0);
 				}
 			}
@@ -70,5 +73,6 @@ int main (void)
 	} while ( SPFirst );
 
 printf ("No ha trobat solucio, el més probable es que no existeixi\n");
+end16 ();
 return 0;
 }
