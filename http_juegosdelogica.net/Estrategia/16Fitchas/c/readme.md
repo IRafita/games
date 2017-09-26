@@ -41,3 +41,10 @@ El input funciona correctament
 Mutacions
 ---------
 Amb ^ se fa execivament facilment ;)
+
+
+La continuació
+==============
+Ara ja tenim gran part de les eines necessaries per a poder fer l'agoritme com degudament se mereix
+
+Em de descobrir quina magia negra fer per obtenir els resultats desitjats

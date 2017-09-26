@@ -11,3 +11,7 @@ input:
 mutacio:
 	gcc 3-mutacions.c
 	./a.out
+
+magiaNegra:
+	gcc lib16Fitxes.c 4-magiaNegra.c --debug
+	./a.out
