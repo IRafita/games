@@ -1,0 +1,21 @@
+define t(a,b) {return total_combinacions_diferents (a,b)}
+define total_combinacions_diferents (a, b)
+{
+	max = max (a, b)
+	min = a+b - max
+	r = 1
+
+	for (i = max+1; i <= a+b; i++)
+		r *= i
+
+	for (i = 2; i <= min; i++)
+		r /= i
+
+	return r
+}
+
+define max (a,b)
+{
+	if ( a > b ) {return a}
+	return b
+}

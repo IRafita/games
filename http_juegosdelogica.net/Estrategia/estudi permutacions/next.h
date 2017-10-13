@@ -1,0 +1,2 @@
+
+int next (int, char *);
