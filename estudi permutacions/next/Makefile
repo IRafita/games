@@ -9,4 +9,4 @@ next.o: next.c
 	gcc next.c -c -g -Wall
 
 clean:
-	rm main.o next.o -f
+	rm main.o next.o main -f

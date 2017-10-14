@@ -1,0 +1,2 @@
+
+void ordenar (int, char *);

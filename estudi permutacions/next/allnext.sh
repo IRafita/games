@@ -1,6 +1,6 @@
 #!/bin/bash
 
-s=$1
+s=`../ordenar/./main $1`
 i=0
 
 while [[ 0 != ${#s} ]]

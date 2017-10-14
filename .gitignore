@@ -1,3 +1,5 @@
 a.out
 b
 *.o
+main
+*.swp
