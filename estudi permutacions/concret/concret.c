@@ -63,6 +63,7 @@ char* t=p;
 
 	while (v && l)
 	{
+		// Parxe pel cas 0011 2
 		//e = evaluar_e (l--, p); // Poden haver fraccions!
 		e = preguntar_maxim (l, p);
 		//r = troba_valor_representatiu ( v/e, p);
