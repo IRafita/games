@@ -1,4 +1,4 @@
-Progectes
+Projectes
 =========
 Algoritme del cotxe
 -------------------
